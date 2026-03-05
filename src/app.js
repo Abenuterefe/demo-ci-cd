@@ -17,6 +17,12 @@ app.post("/text", (req, res) => {
   });
 });
 
+// Temporary test endpoint for CI
+app.post('/echo', (req, res) => {
+  const text = req.body.text;  // get text from request body
+  res.json({ echoedText: text }); // return it directly
+});
+
 app.get("/text", (req, res) => {
   res.json(texts);
 });
