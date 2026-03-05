@@ -12,7 +12,7 @@ app.post("/text", (req, res) => {
   texts.push(text);
 
   res.status(201).json({
-    message: "text stored",
+    message: "teext stored",
     texts,
   });
 });
